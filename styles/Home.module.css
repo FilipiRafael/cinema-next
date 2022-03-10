@@ -8,6 +8,22 @@
   color: #FFF;
 }
 
+/* CUSTOMIZAR A SCROLLBAR */
+
+/* .main::-webkit-scrollbar {
+  width: 50px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: red;
+  border-radius: 30px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 10px;
+} */
+
 .containerMovie {
   padding: 0;
   margin: 0;
