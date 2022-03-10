@@ -78,7 +78,7 @@ export default function Home({ list }) {
 
 // Exportanto essa função, automaticamente a página irá ser renderizada no server side
 
-export async function getClientSideProps() {
+export async function getServerSideProps() {
   const response = await fetch("http://localhost:3000/api/trending");
   const json = await response.json();
 
