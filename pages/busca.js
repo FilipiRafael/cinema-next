@@ -40,24 +40,24 @@ export default function Busca({ list }) {
         <button className={styles.button} onClick={handleSearch}>Buscar</button>
 
         <ul>
-          {movieList.map((item) => (
+          {movieList.map((item, key) => (
             <li key={key}>
-              <Link href={`/movie/${item.id}`}> <a>
-                {/* <img
+              <a href={`/movie/${item.id}`}> <a>
+                <img
                   src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
                   width="150px"
-                /> */}
+                />
 
-              <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
+              {/* <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
                   alt={`Poster ${item.title}`}
                   width={150} 
                   height={500}
-              />
+              /> */}
 
                 <br />
                 {/* {item.title} */}
                 </a>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

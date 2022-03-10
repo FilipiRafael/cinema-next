@@ -17,15 +17,17 @@ export default function MovieItem({info}) {
             {info.title}
         </h1>
 
-        <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`}
+        {/* <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`}
             alt={`Poster ${item.title}`}       
             width={150} 
             height={500}
-        />
+        /> */}
 
-        {/* <img className={styles.backgroundMovie} src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} />
+        {/*  alt={`Poster ${item.title}`} */}
 
-        <img className={styles.backdrop} src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} /> */}
+        <img className={styles.backgroundMovie} src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} />
+
+        <img className={styles.backdrop} src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} />
 
         <p className={styles.overview}>{info.overview}</p>
 

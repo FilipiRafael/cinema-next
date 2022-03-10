@@ -130,7 +130,7 @@
   text-align: center;
 } */
 
-/* .Image {
+ /* .Image {
   width: 100%;
   border-radius: 10px;
   border: solid 0.5px #8257E5; 
@@ -141,9 +141,9 @@
 
 .Image:hover, .Image:focus {
   transform: translateX(5px) scale(1.05);
-} */
+}  */
 
-/* .main ul li a img {
+.main ul li a img {
   width: 100%;
   border-radius: 10px;
   border: solid 0.5px #8257E5; 
@@ -154,7 +154,7 @@
 
 .main ul li a img:hover, .main ul li a img:focus {
   transform: translateX(5px) scale(1.05);
-} */
+}
 
 .button {
   font-size: 1em;
@@ -173,6 +173,7 @@
 
 .button:hover {
   background-color: #07D361;
+  cursor: pointer;
   /* transform: translateX(2px) scale(1.08) */
 }
 
