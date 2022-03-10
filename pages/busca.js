@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { BiSearchAlt } from "react-icons/bi";
+import Image from 'next/image'
 
 export default function Busca({ list }) {
   const [searchText, setSearchText] = useState("");
