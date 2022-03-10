@@ -38,7 +38,13 @@ export default function MovieItem({info}) {
   );
 }
 
-export async function getServerSideProps(context) {
+// getClientSideProps()
+
+// getClientProps()
+
+// getServerSideProps()
+
+export async function getClientSideProps(context) {
   const response = await fetch(`http://localhost:3000/api/movie/${context.params.id}`);
   const json = await response.json();
 
