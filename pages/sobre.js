@@ -17,8 +17,6 @@ export default function Home(props) {
 
         Aplicação desenvolvida para melhorar minhas habilidades em NextJs
 
-        <hr/>
-
         Author: {props.author}
 
       </main>
@@ -27,15 +25,13 @@ export default function Home(props) {
   );
 }
 
-// Exportanto essa função, automaticamente a página irá ser renderizada no server side
+// export async function getStaticProps() {
+//   const response = await fetch("http://localhost:3000/api/trending");
+//   const json = await response.json();
 
-export async function getStaticProps() {
-  const response = await fetch("http://localhost:3000/api/trending");
-  const json = await response.json();
-
-  return {
-    props: {
-      author: 'Filipi'
-    },
-  };
-}
+//   return {
+//     props: {
+//       author: 'Filipi'
+//     },
+//   };
+// }

@@ -121,7 +121,29 @@
   text-align: center;
 }
 
-.main ul li a img {
+/* .main ul li a Image {
+  width: 100%;
+  border-radius: 10px;
+  border: solid 0.5px #8257E5; 
+  transition: transform 0.8s;
+  transform: translateX(0) scale(1);
+  text-align: center;
+} */
+
+/* .Image {
+  width: 100%;
+  border-radius: 10px;
+  border: solid 0.5px #8257E5; 
+  transition: transform 0.8s;
+  transform: translateX(0) scale(1);
+  text-align: center;
+}
+
+.Image:hover, .Image:focus {
+  transform: translateX(5px) scale(1.05);
+} */
+
+/* .main ul li a img {
   width: 100%;
   border-radius: 10px;
   border: solid 0.5px #8257E5; 
@@ -132,7 +154,7 @@
 
 .main ul li a img:hover, .main ul li a img:focus {
   transform: translateX(5px) scale(1.05);
-}
+} */
 
 .button {
   font-size: 1em;

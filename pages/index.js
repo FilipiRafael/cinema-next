@@ -36,18 +36,33 @@ export default function Home({ list }) {
         </div>
         <h2 className={styles.subtitle}>Milhões de filmes e programas de TV para descobrir. Explore agora.</h2>
 
-        <a className={styles.button} href="/busca">PESQUISE UM FILME, OBTENHA TODOS OS DADOS</a>
+        <Link className={styles.button} href="/busca"><a> PESQUISE UM FILME, OBTENHA TODOS OS DADOS </a></Link>
 
         <ul>
-          {list.map((item) => (
-            <li>
-              <a href={`/movie/${item.id}`}>
-                <img
+          {list.map((item, key) => (
+            <li key={key}>
+              <a href={`/movie/${item.id}`}> 
+                {/* <img
                   src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
                   width="150px"
+                /> */}
+
+                <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
+                    alt={`Poster ${item.title}`}
+                    width={200} 
+                    height={300}
+                    // className={styles.Image}
+                    // borderRadius={"10px"}
+                    // sx={{borderRadius:"10px"}}
+                  // border-radius: 10px;
+                  // border: solid 0.5px #8257E5; 
+                  // transition: transform 0.8s;
+                  // transform: translateX(0) scale(1);
+                  // text-align: center;
                 />
                 <br />
                 {/* {item.title} */}
+                
               </a>
             </li>
           ))}

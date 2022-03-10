@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { BiSearchAlt } from "react-icons/bi";
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Busca({ list }) {
   const [searchText, setSearchText] = useState("");
@@ -40,15 +41,23 @@ export default function Busca({ list }) {
 
         <ul>
           {movieList.map((item) => (
-            <li>
-              <a href={`/movie/${item.id}`}>
-                <img
+            <li key={key}>
+              <Link href={`/movie/${item.id}`}> <a>
+                {/* <img
                   src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
                   width="150px"
-                />
+                /> */}
+
+              <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
+                  alt={`Poster ${item.title}`}
+                  width={150} 
+                  height={500}
+              />
+
                 <br />
                 {/* {item.title} */}
-              </a>
+                </a>
+              </Link>
             </li>
           ))}
         </ul>
