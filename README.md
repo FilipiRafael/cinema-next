@@ -1,4 +1,4 @@
-# Cinema Next (Aceito ajuda para encontrar um melhor nome 😁)
+# Cinema Next (Aceito ajuda para encontrar um nome melhor 😁)
 <div style="display: inline-block">
     <img src="readme/website.png" alt="website">
 </div>
