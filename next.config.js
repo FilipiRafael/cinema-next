@@ -6,10 +6,7 @@ const nextConfig = {
 module.exports = {
   images: {
     domains: ['image.tmdb.org'],
-  },
-  nextConfig
+  }
 }
-
-// module.exports = nextConfig
 
 module.exports = nextConfig

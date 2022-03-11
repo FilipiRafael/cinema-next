@@ -6,6 +6,7 @@ import { FaRegHandPeace } from 'react-icons/fa'
 import Image from 'next/image'
 
 export default function Home({ list }) {
+  const baseURL = process.env.NEXT_PUBLIC_API_URL
 
   const [searchText, setSearchText] = useState("");
   const [movieList, setMovieList] = useState([]);
@@ -13,7 +14,7 @@ export default function Home({ list }) {
   const handleSearch = async () => {
     if (searchText !== '') {
       const result = await fetch(
-        `http://localhost:3000/api/search?movie=${searchText}`
+        `${baseURL}/api/search?movie=${searchText}`
       );
 
       const json = await result.json();
@@ -79,7 +80,8 @@ export default function Home({ list }) {
 // Exportanto essa função, automaticamente a página irá ser renderizada no server side
 
 export async function getServerSideProps() {
-  const response = await fetch("http://localhost:3000/api/trending");
+  const baseURL = process.env.NEXT_PUBLIC_API_URL
+  const response = await fetch(`${baseURL}/api/trending`);
   const json = await response.json();
 
   return {

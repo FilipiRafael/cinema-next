@@ -39,7 +39,7 @@ export default function MovieItem({info}) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await fetch(`http://localhost:3000/api/movie/${context.params.id}`);
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movie/${context.params.id}`);
   const json = await response.json();
 
   return {

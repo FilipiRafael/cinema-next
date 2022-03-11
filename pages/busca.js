@@ -6,13 +6,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Busca({ list }) {
+  
   const [searchText, setSearchText] = useState("");
   const [movieList, setMovieList] = useState([]);
 
   const handleSearch = async () => {
     if (searchText !== "") {
       const result = await fetch(
-        `http://localhost:3000/api/search?movie=${searchText}`
+        `${process.env.NEXT_PUBLIC_API_URL}/api/search?movie=${searchText}`
       );
 
       const json = await result.json();
