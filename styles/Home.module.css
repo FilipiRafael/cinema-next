@@ -198,6 +198,23 @@
   width: 50vw;
   text-align: justify;
   z-index: 1;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.information {
+  font-size: 1em;
+  width: 50vw;
+  text-align: justify;
+  z-index: 1;
+}
+
+.informationPrimary {
+  font-size: 1em;
+  width: 50vw;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 0;
 }
 
 .backgroundMovie {

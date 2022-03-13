@@ -29,9 +29,13 @@ export default function MovieItem({info}) {
 
         <img className={styles.backdrop} src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} />
 
+        <p className={styles.informationPrimary}>{info.release_date} • {info.genres[0].name} • {info.runtime}m </p> 
+
         <p className={styles.overview}>{info.overview}</p>
 
-        {/* <p>Nota: {info.vote_average}</p> */}
+        <p className={styles.information}>Nota: {info.vote_average} • Avaliações: {info.vote_count}</p>
+
+
         
       </main>
     </div>
@@ -48,3 +52,6 @@ export async function getServerSideProps(context) {
     },
   };
 }
+
+// ENDPOINT com todas informações por filme
+// https://api.themoviedb.org/3/movie/587?api_key=2eeeb76c18c8747ca40b9e3b007cd4e4&language=en-US
